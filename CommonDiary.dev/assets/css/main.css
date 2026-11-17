@@ -1,0 +1,55 @@
+/*主界面布局*/
+body{
+    margin: 0;
+    background-color: rgb(30, 30, 30);
+}
+/* 文本样式 */
+p,h1,h2,h3,h4,h5,h6,label{
+    color: aliceblue;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/* 输入框样式 */
+fieldset{
+    border: 5px solid aliceblue;
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+input{
+    background-color: rgb(50, 50, 50);
+    border: none;
+    color: aliceblue;
+    padding: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+/* 导航栏样式 */
+.navbar{
+    background-color: rgb(50, 50, 50);
+    position: sticky;
+    top: 0;
+    float: left;
+    height: 44px;
+    width: 100%;
+    box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.3); /* 内阴影，模拟下边框 */
+
+}
+.navbarBtn{
+    float:left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.navbarBtn:hover {
+        background-color: #2980b9;       /* 悬停背景色 */
+        box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.3); /* 内阴影，模拟下边框 */
+}
+.navbarBtn:active {
+        background-color: #1c5a85;       /* 按下背景色（更深） */
+        transform: scale(0.97);          /* 轻微缩小，增强按压感 */
+}

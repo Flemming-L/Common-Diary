@@ -2,24 +2,26 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/public/assets/icon.ico">
+    <link rel="icon" href="assets/icon.ico">
     <title>注册-CommonDiary</title>
-    <link rel="stylesheet" href="/public/assets/css/main.css">
-    <script src="/public/assets/js/navbar.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="assets/js/supabase.js"></script>
 </head>
-<body onload="loadNavbar()">
+<body onload="loadNavbar(),registerbtn()">
 
     <div id="navbar-foundation" class="navbar"></div>
     <br><br><br><br>
     <fieldset>
         <p>注册：</p><br>
-        <form id="loginForm" action="/public/php/register.php" method="post">
+        <form id="register-form">
             <label for="username">用户名：</label>
             <input type="text" id="username" name="username" required><br><br>
             <label for="email">邮箱：</label>
             <input type="email" id="email" name="email" required><br><br>
-            <label for="inviteCode">邀请码：</label>
-            <input type="text" id="inviteCode" name="inviteCode" required><br><br>
+            <label for="password">密码：</label>
+            <input type="password" id="password" name="password" required><br><br>
             <input type="submit" value="注册">
         </form>
 

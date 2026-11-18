@@ -6,16 +6,14 @@
     <link rel="icon" href="assets/icon.ico">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/navbar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="assets/js/supabase.js"></script>
 </head>
 <body onload="loadNavbar(),loginbtn()">
 
     <div id="navbar-foundation" class="navbar"></div>
     <br><br><br><br>
     <fieldset>
-        <p>登录以使用更多操作：</p><br>
-        <form id="login-form">
+        <legend>登录：</legend>
+        <form id="login-form" action="login.php" method="post">
             <label for="username">邮箱：</label>
             <input type="email" id="username" name="username" required><br><br>
             <label for="password">密码：</label>

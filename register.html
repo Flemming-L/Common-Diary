@@ -6,16 +6,14 @@
     <title>注册-CommonDiary</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/navbar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="assets/js/supabase.js"></script>
 </head>
 <body onload="loadNavbar(),registerbtn()">
 
     <div id="navbar-foundation" class="navbar"></div>
     <br><br><br><br>
     <fieldset>
-        <p>注册：</p><br>
-        <form id="register-form">
+        <legend>注册：</legend>
+        <form id="register-form" action="register.php" method="post">
             <label for="username">用户名：</label>
             <input type="text" id="username" name="username" required><br><br>
             <label for="email">邮箱：</label>
